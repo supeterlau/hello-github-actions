@@ -1,0 +1,17 @@
+name: "GitHub Actions"
+description: "Works"
+author: "octocat@github.com"
+
+inputs:
+  USER_NAME:
+    description: "Who to greet"
+    required: true
+    default: "coder"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+branding:
+  icon: "mic"
+  color: "purple"
