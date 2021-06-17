@@ -1,2 +1,12 @@
 name: A workflow for simple action
 on: push
+
+jobs:
+  build:
+    name: simple action
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: ./action-a
+        with:
+          USER_NAME: "monaco"
